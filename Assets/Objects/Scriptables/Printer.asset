@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 463f1159c98547e4aa0d27f1c47851df, type: 3}
-  m_Name: CoffeeMachine
+  m_Name: Printer
   m_EditorClassIdentifier: Assembly-CSharp::StationSO
-  stationName: Coffee Machine
-  stationDescription: Coffee Machine. Have a sip!
-  stationID: coffee1
-  stationType: 0
-  stationProgress: 20
-  stationSpeed: 5
+  stationName: Printer
+  stationDescription: The ol' reliable office photocopy machine. Known for jamming
+    easily.
+  stationID: printer1
+  stationType: 1
+  stationProgress: 50
+  stationSpeed: 2
   stationDecay: 1
   stationChance: 0.0001
+  stationPoints: 2

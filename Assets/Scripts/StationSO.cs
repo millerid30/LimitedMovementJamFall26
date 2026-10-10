@@ -11,6 +11,7 @@ public class StationSO : ScriptableObject
     public float stationSpeed;
     public float stationDecay;
     public float stationChance;
+    public float stationPoints;
 }
 public enum StationType
 {

@@ -13,6 +13,7 @@ public class Station : MonoBehaviour
     [SerializeField] private bool isWorking;
     [SerializeField] private float workRate;
     [SerializeField] private float decayRate;
+    [SerializeField] private float points;
     private SpriteRenderer sr;
     void Start()
     {
@@ -24,10 +25,10 @@ public class Station : MonoBehaviour
         workRate = station.stationSpeed;
         decayRate = station.stationDecay;
         workChance = station.stationChance;
+        points = station.stationPoints;
     }
     void Update()
     {
-        //sr.color = Color.white;
         if (!isActive)
         {
             float x = Random.Range(0f, 1f);
@@ -51,12 +52,16 @@ public class Station : MonoBehaviour
         {
             isWorking = false;
         }
+        sr.color = Color.white;
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
         {
-            sr.color = Color.red;
+            if (isActive)
+            {
+                sr.color = Color.red;
+            }
             progress -= Time.deltaTime * decayRate;
         }
         else
@@ -81,13 +86,13 @@ public class Station : MonoBehaviour
             if (progress >= maxProgress)
             {
                 Debug.Log("Task Complete!");
-                ScoreManager.Instance.Points(1);
+                ScoreManager.Instance.Points((int)points);
                 IsActive(false);
             }
             if (progress <= 0)
             {
                 Debug.Log("Task Failed!");
-                ScoreManager.Instance.Points(-1);
+                ScoreManager.Instance.Points(-(int)points);
                 IsActive(false);
             }
         }
