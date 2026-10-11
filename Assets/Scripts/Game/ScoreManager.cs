@@ -52,7 +52,7 @@ public class ScoreManager : MonoBehaviour
         if (score >= winScore)
         {
             gameResult.text = "You Win!";
-            SoundManager.Instance.PlaySound("Win", 0.5f);
+            SoundManager.Instance.PlaySound("Win", 0.4f);
             if (confetti.GetComponent<Confetti>() != null)
             {
                 for (int i = 0; i < confettiCoef; i++)
@@ -64,7 +64,7 @@ public class ScoreManager : MonoBehaviour
         else
         {
             gameResult.text = "You're Fired!";
-            SoundManager.Instance.PlaySound("Lose", 0.5f);
+            SoundManager.Instance.PlaySound("Lose", 0.4f);
             if (confetti.GetComponent<Confetti>() != null)
             {
                 for (int i = 0; i < Mathf.RoundToInt(confettiCoef / 10); i++)

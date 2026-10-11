@@ -88,6 +88,7 @@ public class Station : MonoBehaviour
             if (progress >= maxProgress)
             {
                 ScoreManager.Instance.Points((int)points);
+                SoundManager.Instance.PlaySound("TaskWin", 0.35f);
                 IsActive(false);
             }
             if (progress <= 0)
@@ -95,10 +96,12 @@ public class Station : MonoBehaviour
                 if (type == StationType.Active)
                 {
                     ScoreManager.Instance.Points(-(int)points);
+                    SoundManager.Instance.PlaySound("TaskLose", 0.35f);
                 }
                 else
                 {
                     ScoreManager.Instance.Points(0);
+                    SoundManager.Instance.PlaySound("TaskLose", 0.15f);
                 }
                 IsActive(false);
             }

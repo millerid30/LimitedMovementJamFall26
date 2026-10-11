@@ -17,8 +17,8 @@ MonoBehaviour:
     you're done!
   stationID: computer1
   stationType: 1
-  stationProgress: 100
+  stationProgress: 50
   stationSpeed: 5
   stationDecay: 0.5
-  stationChance: 0.0025
+  stationChance: 0.0005
   stationPoints: 3

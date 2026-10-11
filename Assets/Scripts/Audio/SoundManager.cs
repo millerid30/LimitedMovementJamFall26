@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
@@ -28,5 +27,9 @@ public class SoundManager : MonoBehaviour
         {
             audioSource.Stop();
         }
+    }
+    public void PlaySound2D(string name)
+    {
+        audioSource.PlayOneShot(sfxLib.GetClipFromName(name), 0.35f);
     }
 }
