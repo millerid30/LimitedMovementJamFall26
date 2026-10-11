@@ -20,5 +20,5 @@ MonoBehaviour:
   stationProgress: 50
   stationSpeed: 5
   stationDecay: 0.5
-  stationChance: 0.0005
+  stationChance: 0.005
   stationPoints: 3

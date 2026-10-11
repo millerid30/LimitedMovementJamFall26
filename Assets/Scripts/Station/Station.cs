@@ -29,7 +29,7 @@ public class Station : MonoBehaviour
         points = station.stationPoints;
         type = station.stationType;
     }
-    void Update()
+    void FixedUpdate()
     {
         if (!isActive)
         {
