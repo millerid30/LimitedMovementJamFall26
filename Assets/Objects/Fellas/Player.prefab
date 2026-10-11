@@ -196,7 +196,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.9165355
+  m_Radius: 1.017489
 --- !u!1 &2669349219225315819
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,20 +505,8 @@ MonoBehaviour:
     m_ActionName: 'Controls/Kick[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 973ebc64-3331-4cab-b5b8-59df88620ac1
-    m_ActionName: 'Controls/Up[/Keyboard/w,/Keyboard/upArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 15ff2a05-7eed-4095-8e6b-69ccb20a54e6
-    m_ActionName: 'Controls/Down[/Keyboard/s,/Keyboard/downArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4dd1e9a8-2d62-4f3e-be3c-c85f40484249
-    m_ActionName: 'Controls/Left[/Keyboard/a,/Keyboard/leftArrow]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 58823c85-e360-48bc-be7a-df0902612fbd
-    m_ActionName: 'Controls/Right[/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionId: fd15132c-8e72-4124-bfa5-03488530e998
+    m_ActionName: 'Controls/Menu[/Keyboard/escape,/Keyboard/tab,/Keyboard/p]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Controls
