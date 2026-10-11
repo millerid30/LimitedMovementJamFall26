@@ -105,6 +105,10 @@ PrefabInstance:
       value: CoffeeMaker
       objectReference: {fileID: 0}
     - target: {fileID: 9044211079234096902, guid: 6179fd3b8d52cf146abb07da63842771, type: 3}
+      propertyPath: m_Radius
+      value: 1.3645397
+      objectReference: {fileID: 0}
+    - target: {fileID: 9044211079234096902, guid: 6179fd3b8d52cf146abb07da63842771, type: 3}
       propertyPath: m_Offset.y
       value: -0.31
       objectReference: {fileID: 0}

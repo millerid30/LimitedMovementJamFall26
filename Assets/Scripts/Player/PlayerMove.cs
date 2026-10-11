@@ -46,6 +46,7 @@ public class PlayerMove : MonoBehaviour
             {
                 rb.AddForce(-body.up * kickForce * kickTimer, ForceMode2D.Impulse);
                 cooldownTimer = kickCooldown;
+                SoundManager.Instance.PlaySound("ChairRoll", 0.25f);
             }
         }
     }
@@ -67,6 +68,7 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.GetComponent<Enemy>().Damage(rb.linearVelocity.magnitude);
+            SoundManager.Instance.PlaySound("Hit", 0.25f);
         }
     }
 }
