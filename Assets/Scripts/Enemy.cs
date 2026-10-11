@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float maxSpeed = 3f;
     [SerializeField] private float health = 0f;
     [SerializeField] private float maxHealth = 10f;
+    [SerializeField] private float launchCoef = 50f;
     private bool isDead;
     private SpriteRenderer sr;
     private float offset = -90;
@@ -28,8 +29,11 @@ public class Enemy : MonoBehaviour
         {
             GetTarget();
         }
-        Look();
-        Move();
+        if (!isDead)
+        {
+            Look();
+            Move();
+        }
         ClampSpeed();
         if (health <= 0 && !isDead)
         {
@@ -77,8 +81,8 @@ public class Enemy : MonoBehaviour
             coll.enabled = false;
         }
         Vector2 randDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
-        rb.AddForce(randDir.normalized * moveSpeed * maxSpeed, ForceMode2D.Impulse);
-        rb.AddTorque(randDir.x * turnSpeed * maxSpeed, ForceMode2D.Impulse);
+        rb.AddForce(randDir.normalized * launchCoef, ForceMode2D.Impulse);
+        rb.AddTorque(randDir.x * launchCoef, ForceMode2D.Impulse);
         Destroy(gameObject, 3);
     }
 }

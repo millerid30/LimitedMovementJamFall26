@@ -14,6 +14,7 @@ public class Station : MonoBehaviour
     [SerializeField] private float workRate;
     [SerializeField] private float decayRate;
     [SerializeField] private float points;
+    [SerializeField] private StationType type;
     private SpriteRenderer sr;
     void Start()
     {
@@ -26,6 +27,7 @@ public class Station : MonoBehaviour
         decayRate = station.stationDecay;
         workChance = station.stationChance;
         points = station.stationPoints;
+        type = station.stationType;
     }
     void Update()
     {
@@ -92,7 +94,14 @@ public class Station : MonoBehaviour
             if (progress <= 0)
             {
                 Debug.Log("Task Failed!");
-                ScoreManager.Instance.Points(-(int)points);
+                if (type == StationType.Active)
+                {
+                    ScoreManager.Instance.Points(-(int)points);
+                }
+                else
+                {
+                    ScoreManager.Instance.Points(0);
+                }
                 IsActive(false);
             }
         }

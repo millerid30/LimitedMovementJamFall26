@@ -38,8 +38,11 @@ public class ScoreManager : MonoBehaviour
     }
     public void Points(int amount = 0)
     {
-        score += amount;
-        scoreUI.text = score.ToString();
+        if (!gameEnd)
+        {
+            score += amount;
+            scoreUI.text = score.ToString();
+        }
     }
     IEnumerator GameEnd()
     {
