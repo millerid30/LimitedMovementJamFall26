@@ -2,7 +2,7 @@
 - Project name: LimitedMovementJamFall26
 - Unity version: Unity 6000.5.3f1
 - Active game object:
-  - Name: Printer
+  - Name: FilingCabinet
   - Tag: Station
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
