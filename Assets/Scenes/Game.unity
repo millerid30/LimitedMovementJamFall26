@@ -953,11 +953,15 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 1
   m_Points:
-  - {x: -1.0964491, y: 0.44855425}
-  - {x: 1.0988921, y: 0.4441746}
-  - {x: 1.1035328, y: -0.6052139}
-  - {x: -1.100808, y: -0.602923}
-  - {x: -1.0960045, y: 0.45026708}
+  - {x: -1.1044601, y: 0.21890764}
+  - {x: -0.8984987, y: 0.44684508}
+  - {x: 0.90593, y: 0.45222846}
+  - {x: 1.1048675, y: 0.20084}
+  - {x: 1.0989896, y: -0.4255942}
+  - {x: 0.92274916, y: -0.59916425}
+  - {x: -0.90374225, y: -0.5938236}
+  - {x: -1.0960042, y: -0.39889112}
+  - {x: -1.101345, y: 0.21795025}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -4221,12 +4225,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.85
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

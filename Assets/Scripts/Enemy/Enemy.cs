@@ -4,7 +4,7 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int target = 0;
-    [SerializeField] private float moveSpeed = 1f;
+    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float turnSpeed = 2f;
     [SerializeField] private float maxSpeed = 3f;
     [SerializeField] private float health = 0f;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         health = maxHealth;
         isDead = false;
     }
-    void Update()
+    void FixedUpdate()
     {
         if (targetDir == null || !StationList.Instance.stations[target].GetComponent<Station>().StationActive())
         {

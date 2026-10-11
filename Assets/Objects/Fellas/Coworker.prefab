@@ -245,12 +245,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   target: 0
-  moveSpeed: 0.5
-  turnSpeed: 2
+  moveSpeed: 5
+  turnSpeed: 3
   maxSpeed: 3
   health: 0
   maxHealth: 5
-  launchCoef: 50
+  launchCoef: 25
 --- !u!50 &2409000729624269352
 Rigidbody2D:
   serializedVersion: 5
